@@ -48,8 +48,21 @@ function saveInput(typedInput) {
     console.log('Dette ble skrevet inn: ' + textString);
 }
 
-function countVowels(){
+function emptyCounter(){
+    aCounter = 0;
+    eCounter = 0;
+    iCounter = 0;
+    oCounter = 0;
+    uCounter = 0;
+    yCounter = 0;
+    aeCounter = 0;
+    oeCounter = 0;
+    aaCounter = 0;
+}
 
+
+function countVowels(){
+    emptyCounter();
     for (let i=0; i < textString.length; i++) {
         let currentLetter = textString.charAt(i);
 
